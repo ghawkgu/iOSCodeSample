@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E096CD04150F9E6000E7A64F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E096CD03150F9E6000E7A64F /* UIKit.framework */; };
+		E096CD06150F9E6000E7A64F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E096CD05150F9E6000E7A64F /* Foundation.framework */; };
+		E096CD08150F9E6000E7A64F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E096CD07150F9E6000E7A64F /* CoreGraphics.framework */; };
+		E096CD0E150F9E6000E7A64F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E096CD0C150F9E6000E7A64F /* InfoPlist.strings */; };
+		E096CD10150F9E6000E7A64F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E096CD0F150F9E6000E7A64F /* main.m */; };
+		E096CD14150F9E6000E7A64F /* CVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E096CD13150F9E6000E7A64F /* CVAppDelegate.m */; };
+		E096CD17150F9E6000E7A64F /* CVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E096CD16150F9E6000E7A64F /* CVViewController.m */; };
+		E096CD1A150F9E6000E7A64F /* CVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E096CD18150F9E6000E7A64F /* CVViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E096CCFF150F9E6000E7A64F /* CoverView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoverView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E096CD03150F9E6000E7A64F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E096CD05150F9E6000E7A64F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E096CD07150F9E6000E7A64F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E096CD0B150F9E6000E7A64F /* CoverView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoverView-Info.plist"; sourceTree = "<group>"; };
+		E096CD0D150F9E6000E7A64F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E096CD0F150F9E6000E7A64F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E096CD11150F9E6000E7A64F /* CoverView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoverView-Prefix.pch"; sourceTree = "<group>"; };
+		E096CD12150F9E6000E7A64F /* CVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CVAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E096CD13150F9E6000E7A64F /* CVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CVAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E096CD15150F9E6000E7A64F /* CVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CVViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E096CD16150F9E6000E7A64F /* CVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CVViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E096CD19150F9E6000E7A64F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CVViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E096CCFC150F9E6000E7A64F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E096CD04150F9E6000E7A64F /* UIKit.framework in Frameworks */,
+				E096CD06150F9E6000E7A64F /* Foundation.framework in Frameworks */,
+				E096CD08150F9E6000E7A64F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E096CCF4150F9E5F00E7A64F = {
+			isa = PBXGroup;
+			children = (
+				E096CD09150F9E6000E7A64F /* CoverView */,
+				E096CD02150F9E6000E7A64F /* Frameworks */,
+				E096CD00150F9E6000E7A64F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E096CD00150F9E6000E7A64F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E096CCFF150F9E6000E7A64F /* CoverView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E096CD02150F9E6000E7A64F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E096CD03150F9E6000E7A64F /* UIKit.framework */,
+				E096CD05150F9E6000E7A64F /* Foundation.framework */,
+				E096CD07150F9E6000E7A64F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E096CD09150F9E6000E7A64F /* CoverView */ = {
+			isa = PBXGroup;
+			children = (
+				E096CD12150F9E6000E7A64F /* CVAppDelegate.h */,
+				E096CD13150F9E6000E7A64F /* CVAppDelegate.m */,
+				E096CD15150F9E6000E7A64F /* CVViewController.h */,
+				E096CD16150F9E6000E7A64F /* CVViewController.m */,
+				E096CD18150F9E6000E7A64F /* CVViewController.xib */,
+				E096CD0A150F9E6000E7A64F /* Supporting Files */,
+			);
+			path = CoverView;
+			sourceTree = "<group>";
+		};
+		E096CD0A150F9E6000E7A64F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E096CD0B150F9E6000E7A64F /* CoverView-Info.plist */,
+				E096CD0C150F9E6000E7A64F /* InfoPlist.strings */,
+				E096CD0F150F9E6000E7A64F /* main.m */,
+				E096CD11150F9E6000E7A64F /* CoverView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E096CCFE150F9E6000E7A64F /* CoverView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E096CD1D150F9E6000E7A64F /* Build configuration list for PBXNativeTarget "CoverView" */;
+			buildPhases = (
+				E096CCFB150F9E6000E7A64F /* Sources */,
+				E096CCFC150F9E6000E7A64F /* Frameworks */,
+				E096CCFD150F9E6000E7A64F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoverView;
+			productName = CoverView;
+			productReference = E096CCFF150F9E6000E7A64F /* CoverView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E096CCF6150F9E5F00E7A64F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CV;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "ngi group inc.";
+			};
+			buildConfigurationList = E096CCF9150F9E5F00E7A64F /* Build configuration list for PBXProject "CoverView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E096CCF4150F9E5F00E7A64F;
+			productRefGroup = E096CD00150F9E6000E7A64F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E096CCFE150F9E6000E7A64F /* CoverView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E096CCFD150F9E6000E7A64F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E096CD0E150F9E6000E7A64F /* InfoPlist.strings in Resources */,
+				E096CD1A150F9E6000E7A64F /* CVViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E096CCFB150F9E6000E7A64F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E096CD10150F9E6000E7A64F /* main.m in Sources */,
+				E096CD14150F9E6000E7A64F /* CVAppDelegate.m in Sources */,
+				E096CD17150F9E6000E7A64F /* CVViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E096CD0C150F9E6000E7A64F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E096CD0D150F9E6000E7A64F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E096CD18150F9E6000E7A64F /* CVViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E096CD19150F9E6000E7A64F /* en */,
+			);
+			name = CVViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E096CD1B150F9E6000E7A64F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E096CD1C150F9E6000E7A64F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E096CD1E150F9E6000E7A64F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoverView/CoverView-Prefix.pch";
+				INFOPLIST_FILE = "CoverView/CoverView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E096CD1F150F9E6000E7A64F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoverView/CoverView-Prefix.pch";
+				INFOPLIST_FILE = "CoverView/CoverView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E096CCF9150F9E5F00E7A64F /* Build configuration list for PBXProject "CoverView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E096CD1B150F9E6000E7A64F /* Debug */,
+				E096CD1C150F9E6000E7A64F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E096CD1D150F9E6000E7A64F /* Build configuration list for PBXNativeTarget "CoverView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E096CD1E150F9E6000E7A64F /* Debug */,
+				E096CD1F150F9E6000E7A64F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E096CCF6150F9E5F00E7A64F /* Project object */;
+}
