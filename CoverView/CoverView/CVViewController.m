@@ -70,13 +70,13 @@ typedef enum {
         case UIGestureRecognizerStateEnded:
             NSLog(@"Pan ended.");
             CGFloat delta = self.coverView.frame.origin.x - containerFrameStartedToPan.origin.x;
-            CGFloat absolution = ABS(delta);
+            CGFloat absolute = ABS(delta);
             
             CGRect currentFrame = containerFrameStartedToPan;
             CoverPosition stopPosition = currentPosition;
             
             // 滑动小于44点时，不移动
-            if (absolution >= THRESHOLD) {
+            if (absolute >= THRESHOLD) {
                 // 滑动超过44点时，执行滑动
                 int direction = delta < 0 ? -1 : 1;
                 stopPosition = currentPosition + direction;
