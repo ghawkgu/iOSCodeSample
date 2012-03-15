@@ -8,6 +8,9 @@
 
 #import "CVViewController.h"
 
+#define THRESHOLD               44.0f
+#define VISIBLE_BORDER_WIDTH    40.0f
+
 typedef enum {
     CoverPositionCenter = 0,
     CoverPositionLeft   = -1,
@@ -28,10 +31,10 @@ typedef enum {
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    //初始化PanGestureRecognizer
+    // 初始化PanGestureRecognizer
     UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onPan:)];
     [self.coverView addGestureRecognizer:recognizer];
-    //记录视图的初始位置
+    // 记录视图的初始位置
     currentPosition = CoverPositionCenter;
 }
 
@@ -63,50 +66,28 @@ typedef enum {
             containerFrame.origin.x += translation.x;
             self.coverView.frame = containerFrame;
             break;
+            
         case UIGestureRecognizerStateEnded:
             NSLog(@"Pan ended.");
             CGFloat delta = self.coverView.frame.origin.x - containerFrameStartedToPan.origin.x;
-            CGFloat absolution = delta < 0 ? -delta : delta;
+            CGFloat absolution = ABS(delta);
             
             CGRect currentFrame = containerFrameStartedToPan;
             CoverPosition stopPosition = currentPosition;
             
             // 滑动小于44点时，不移动
-            if (absolution >= 44) {
+            if (absolution >= THRESHOLD) {
                 // 滑动超过44点时，执行滑动
-                if (delta < 0) {
-                    //向左
-                    NSLog(@"Move left");
-                    //根据当前位置决定滑动的终止状态
-                    if (currentPosition == CoverPositionCenter) {
-                        currentFrame.origin.x = -280;
-                        stopPosition = CoverPositionLeft;
-                    }
-                    if (currentPosition == CoverPositionRight) {
-                        currentFrame.origin.x = 0;
-                        stopPosition = CoverPositionCenter;
-                    }
-                    if (currentPosition == CoverPositionLeft) {
-                        currentFrame.origin.x = -280;
-                        stopPosition = CoverPositionLeft;
-                    }
-                    
+                int direction = delta < 0 ? -1 : 1;
+                stopPosition = currentPosition + direction;
+                
+                if (stopPosition == CoverPositionCenter) {
+                    currentFrame.origin.x = 0;
                 } else {
-                    NSLog(@"Move right");
-                    if (currentPosition == CoverPositionCenter) {
-                        currentFrame.origin.x = 280;
-                        stopPosition = CoverPositionRight;
-                    }
-                    if (currentPosition == CoverPositionRight) {
-                        currentFrame.origin.x = 280;
-                        stopPosition = CoverPositionRight;
-                    }
-                    if (currentPosition == CoverPositionLeft) {
-                        currentFrame.origin.x = 0;
-                        stopPosition = CoverPositionCenter;
-                    }
+                    currentFrame.origin.x = direction * (currentFrame.size.width - VISIBLE_BORDER_WIDTH);
                 }
             }
+            
             //移动coverView的动画
             [UIView animateWithDuration:0.25 animations:^{
                 self.coverView.frame = currentFrame;
