@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CVViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITableView *coverView;
+@property (strong, nonatomic) IBOutlet UIView *coverView;
 
 @end
